@@ -124,7 +124,7 @@ export default function About() {
               />
               <div className="row mt-3">
                 <h3>Bootstrap</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>
+                <p>Lorem ipsum dolor consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>
 
               </div>
             </div>
