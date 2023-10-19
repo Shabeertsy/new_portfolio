@@ -60,8 +60,7 @@ export default function About() {
               <DiDjango style={{ width: '50px', height: '35px', color: 'black' }} />
               <div className="row">
                 <h3>Django</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>
-
+                <p>Django is a high-level Python web framework known for its simplicity and rapid development capabilities. It follows the "batteries-included" philosophy, providing a wide range of built-in features such as an ORM, authentication, and templating, which simplifies web application development. Django's robust security features make it a popular choice for building secure web applications. It also encourages the use of the Model-View-Controller (MVC) architectural pattern, making it easy to separate concerns and maintain clean, scalable cod</p>
               </div>
             </div>
             <div className="col-lg-4 text-center">
