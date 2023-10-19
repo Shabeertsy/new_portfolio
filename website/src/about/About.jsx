@@ -12,6 +12,8 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import tech from '../assets/animation_lntud7i4.json';
 import react from '../assets/animation_lntuewqg.json';
 import js from '../assets/animation_lnturah0.json';
+import python from '../assets/animation_lnx3qxts.json';
+import html from '../assets/animation_lnx3rzhe.json';
 
 
 export default function About() {
@@ -20,7 +22,7 @@ export default function About() {
       <div className="about-main">
         <div className="container">
           <div className="row">
-            <p className='p-main text-center mb-5 mt-5'>Techonologies</p>
+            <p className='p-main text-center mb-5 mt-5'>Technologies</p>
           </div>
           <div className="row">
             <Player
@@ -41,30 +43,45 @@ export default function About() {
                 background='dark'
                 style={{ width: '50px', height: '50px' }}
               />
-              <div className="row">
+              <div className="row mt-3">
                 <h3 className=''>React</h3>
 
                 <p className=''>React is a popular JavaScript library for building user interfaces. Developed by Facebook, it's known for its efficiency and flexibility. React allows developers to create interactive and dynamic web applications with ease. Its component-based architecture simplifies the development process, making it a go-to choice for many front-end developers.</p>
               </div>
             </div>
             <div className="col-lg-4 text-center">
-              {/* <Player
-                src={js}
+              <Player
+                src={python}
                 className="skill-icon"
                 loop
                 autoplay
                 background='dark'
                 style={{ width: '50px', height: '35px' }}
-              /> */}
+              />
 
-              <DiDjango style={{ width: '50px', height: '35px', color: 'black' }} />
-              <div className="row">
-                <h3>Django</h3>
-                <p>Django is a high-level Python web framework known for its simplicity and rapid development capabilities. It follows the "batteries-included" philosophy, providing a wide range of built-in features such as an ORM, authentication, and templating, which simplifies web application development. Django's robust security features make it a popular choice for building secure web applications. It also encourages the use of the Model-View-Controller (MVC) architectural pattern, making it easy to separate concerns and maintain clean, scalable cod</p>
+              <div className="row mt-3">
+                <h3>Python Django</h3>
+                <p>Django is a high-level Python web framework known for its simplicity and rapid development capabilities. providing a wide range of built-in features such as an ORM, authentication, and templating, which simplifies web application development. Django's robust security features make it a popular choice for building secure web applications.</p>
               </div>
             </div>
             <div className="col-lg-4 text-center">
               <Player
+                src={html}
+                className="skill-icon"
+                loop
+                autoplay
+                background='dark'
+                style={{ width: '50px', height: '35px' }}
+              />
+              <div className="row mt-3">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>
+
+              </div>
+            </div>
+
+            <div className="col-lg-4 text-center mt-5">
+              <Player
                 src={js}
                 className="skill-icon"
                 loop
@@ -72,8 +89,8 @@ export default function About() {
                 background='dark'
                 style={{ width: '50px', height: '35px' }}
               />
-              <div className="row">
-                <h3>React</h3>
+              <div className="row mt-3">
+                <h3>Javascript</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>
 
               </div>
@@ -89,24 +106,8 @@ export default function About() {
                 style={{ width: '50px', height: '35px' }}
               />
               <div className="row">
-                <h3>React</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>
-
-              </div>
-            </div>
-
-            <div className="col-lg-4 text-center mt-5">
-              <Player
-                src={js}
-                className="skill-icon"
-                loop
-                autoplay
-                background='dark'
-                style={{ width: '50px', height: '35px' }}
-              />
-              <div className="row">
-                <div className="row">
-                  <h3>React</h3>
+                <div className="row mt-3">
+                  <h3>CSS</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>
 
                 </div>
@@ -121,8 +122,8 @@ export default function About() {
                 background='dark'
                 style={{ width: '50px', height: '35px' }}
               />
-              <div className="row">
-                <h3>React</h3>
+              <div className="row mt-3">
+                <h3>Bootstrap</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>
 
               </div>

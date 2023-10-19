@@ -1,20 +1,10 @@
 import React, { useState } from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
-import website from './assets/VttzdhbLan.json';
+import website from './assets/animation_lnx3pa6v.json';
 import './App.css'
 
 function Animation() {
-  const [isStopped, setIsStopped] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: website,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  };
 
   return (
     <>
