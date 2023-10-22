@@ -11,10 +11,11 @@ function Animation() {
       <div className='dark-bg'>
       <Player
         src={website}
-        className="player"
+        className="player-1"
         loop
         autoplay
         background='dark'
+        
       />
       </div>
     </>

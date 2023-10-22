@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 
 
+
+.main-hero{
+    background-color:	#1b1c1e;
+    width: 100%;
+    height: 100%;
+
+}
+
+.dark-bg{
+  background-color:	#1b1c1e;
+}
+.hero-right{
+  margin-top: 20%;
+}
+
+
 /* default font setting */
 .font-family {
     font-family: 'Rubik', sans-serif;
@@ -15,20 +31,17 @@
     height: 100vh;
 }
 
-.hero-container {
-    width: 100vw;
-}
+
 .description{
     font-family: 'Montserrat', sans-serif;
     font-size: small;
-    width: 500px;
+    /* width:45rem; */
     font-family: 'Tilt Neon', sans-serif;
 }
 
 .hero-name-h1 {
-    font-size: 4rem;
+    font-size: 4em;
     font-weight: 600;
-    margin-right: 10px;
     font-family: 'Tilt Neon', sans-serif;
 }
 
@@ -44,7 +57,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 260px;
-    margin-left: 79px;
+    /* margin-left: 79px; */
 }
 
 .arrow-icon {
@@ -135,22 +148,12 @@
 
 /* media query */
 @media only screen and (max-width: 994px) {
-    .animated-container {
+    /* .animated-container {
         margin-top: 130px;
         justify-content: center;
         text-align: center;
-    }
-
-    .png-image {
-        width: 16rem;
-        position: absolute;
-        top: 130px;
-    }
-
-    .hireme {
-        display: flex;
-        justify-content: center;
-    }
+    } */
+    
 
 }
 

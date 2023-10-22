@@ -25,13 +25,16 @@ export default function About() {
             <p className='p-main text-center mb-5 mt-5'>Technologies</p>
           </div>
           <div className="row">
-            <Player
+          <div className="col-lg-4"></div>
+          <div className="col-lg-4">    <Player
               src={tech}
               className="player"
               loop
               autoplay
               background='dark'
-            />
+
+            /></div>
+          <div className="col-lg-4"></div>
           </div>
           <div className="row">
             <div className="col-lg-4 text-center">
@@ -97,14 +100,9 @@ export default function About() {
             </div>
 
             <div className="col-lg-4 text-center mt-5">
-              <Player
-                src={js}
-                className="skill-icon"
-                loop
-                autoplay
-                background='dark'
-                style={{ width: '50px', height: '35px' }}
-              />
+                
+            <ImCss3 style={{ width: '50px', height: '35px',color:'skyblue' }}/>
+
               <div className="row">
                 <div className="row mt-3">
                   <h3>CSS</h3>
@@ -114,14 +112,7 @@ export default function About() {
               </div>
             </div>
             <div className="col-lg-4 text-center mt-5">
-              <Player
-                src={js}
-                className="skill-icon"
-                loop
-                autoplay
-                background='dark'
-                style={{ width: '50px', height: '35px' }}
-              />
+            <FaBootstrap style={{ width: '50px', height: '35px' ,color:'violet' }}/>
               <div className="row mt-3">
                 <h3>Bootstrap</h3>
                 <p>Lorem ipsum dolor consectetur adipisicing elit. Sint hic recusandae nihil ipsum nisi dolorem, rem architecto est saepe! Veritatis fugit quae consequatur facere aliquid! Recusandae animi totam perferendis? Eligendi?</p>

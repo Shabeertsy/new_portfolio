@@ -19,6 +19,8 @@ export default function () {
                   loop
                   autoplay
                   background='dark'
+
+
                 />
               </div>
             </div>
@@ -26,7 +28,7 @@ export default function () {
               <div className="p-heading  d-flex">
                 <p className='p-main'>Discover Our </p> <p className='p-second'>Projects</p>
               </div>
-              <p>In the ever-evolving landscape of web development, full-stack development has become increasingly popular. Full-stack developers are well-versed in both front-end and back-end technologies, allowing them to create comprehensive and feature-rich web applications. Python and Django, a high-level web framework, have gained significant prominence in this domain. Together, they form a dynamic duo that empowers developers to bring their web development ideas to life. In this essay, we explore the world of full-stack development projects using Python and Django.
+              <p className='p-3'>In the ever-evolving landscape of web development, full-stack development has become increasingly popular. Full-stack developers are well-versed in both front-end and back-end technologies, allowing them to create comprehensive and feature-rich web applications. Python and Django, a high-level web framework, have gained significant prominence in this domain. Together, they form a dynamic duo that empowers developers to bring their web development ideas to life. In this essay, we explore the world of full-stack development projects using Python and Django.
 
                 Python is a versatile and widely used programming language known for its readability, flexibility, and extensive library support. With its elegant syntax, Python is an excellent choice for both beginners and experienced developers. In combination with Django, a robust web framework, it offers a powerful toolset for building web applications efficiently. Django follows the "batteries-included" philosophy, which means it comes with a variety of built-in features and libraries, saving developers time and effort. This combination makes Python and Django ideal for full-stack development.
 
