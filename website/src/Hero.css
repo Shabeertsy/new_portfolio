@@ -153,6 +153,9 @@
         justify-content: center;
         text-align: center;
     } */
+    .animated-container{
+        margin-top: 90px;
+    }
     
 
 }
