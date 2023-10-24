@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css'
 import { instance } from '../../Axios';
+import { DataContext } from '../../context/Context';
+import Loader2 from '../../loader/Loader2';
 
 
 
@@ -13,46 +15,77 @@ export default function Login() {
         password: ''
     })
     const [isSuccess, setIsSuccess] = useState(false)
+    const [isEmpty, setIsEmpty] = useState(false)
+    const [isError, setIsError] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
+
+
+    const {setUser,setAuthtoken}=useContext(DataContext)
+
+
 
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
+
+            setFormData({
+                ...formData,
+                [name]: value,
+            });
+    
     };
 
 
 
 
     const handleSubmit = async (event) => {
+        setIsLoading(true)
         event.preventDefault();
+        if (formData.email!='' || formData.password != ''){
+        setIsEmpty(false)
 
         await instance.post('login/', formData).then((res) => {
             console.log("login", res.data);
-            if (res.status == 200){
+            if (res.status == 200) {
                 setIsSuccess(true)
+                setIsError(false)
+                setAuthtoken(res.data)
+                localStorage.setItem('authToken',JSON.stringify(res.data));
+                navigate('/')
+
             }
+
         }).catch((error) => {
+
             console.log('login error', error);
+            if(error.response.status==401){
+                setIsError(error.response.data.error)
+                setIsLoading(false)
+            }
 
         })
+
+    }else{
+        setIsEmpty(true)
     }
+    setIsLoading(false)
 
-
+    }
 
     return (
         <div>
             <div className="login-main">
                 <div class="container-login">
                     <div class="heading">Sign In</div>
-                    <p className='text-center text-success'>{ isSuccess ? 'Login successs' : '' }</p>
+                    <p className='text-center text-success'>{isSuccess ? 'Login successs' : ''}</p>
+                    <p className='text-center text-danger'>{isError && isError}</p>
+                    <p className='text-center text-danger'>{isEmpty ? 'Fields canot be empty' : ''}</p>
                     <form onSubmit={handleSubmit} class="form">
                         <input required="" class="input" type="email" name="email" id="email" onChange={handleInputChange} placeholder="E-mail" />
                         <input required="" class="input" type="password" name="password" id="password" onChange={handleInputChange} placeholder="Password" />
                         <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
-                        <input class="login-button" type="submit" value="Sign In" />
+                        {isLoading ? <Loader2/> : <input class="login-button" type="submit" value="Sign In" />}
+
 
                     </form>
                     {/* <div class="social-account-container">

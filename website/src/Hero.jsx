@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Animation from './Animation';
 import { BsArrowRightCircle } from "react-icons/bs"
 import { Link } from 'react-router-dom';
@@ -6,9 +6,14 @@ import './Hero.css'
 import Projects from './Project/Projects';
 import About from './about/About';
 import Footer from './footer/Footer';
+import { DataContext } from './context/Context';
 
 
 function Hero() {
+
+  const{user}=useContext(DataContext)
+
+
   return (
     <>
       <div className="main-hero">

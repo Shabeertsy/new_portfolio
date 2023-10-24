@@ -4,7 +4,7 @@ import Hero from './Hero'
 import Navbar from './navbar/Navbar'
 import About from './about/About'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-// import { DataProvider } from './context/ContectAuth'
+import { DataProvider } from './context/Context'
 import SignUp from './auth/register/Register'
 import Login from './auth/login/Login'
 import Otp from './auth/emailOtp/Otp'
@@ -18,8 +18,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <DataProvider>
+
       <Navbar />
-      {/* <DataProvider> */}
         <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
@@ -28,7 +29,7 @@ function App() {
         <Route path="/otp" element={<Otp />} />
         <Route path="/l" element={<Loader />} />
         </Routes>
-        {/* </DataProvider> */}
+        </DataProvider>
       </BrowserRouter>
     </>
   )
